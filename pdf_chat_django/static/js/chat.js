@@ -6,7 +6,7 @@ $(document).ready(() => {
     var formData = new FormData(this)
     $("#upload-status").text("Processing...").removeClass("text-red-500 text-green-500").addClass("text-blue-500")
     $.ajax({
-      url: "/process_pdfs/",
+      url: "process_pdfs/",
       type: "POST",
       data: formData,
       processData: false,
